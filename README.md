@@ -20,21 +20,23 @@ transcribed text
 
 Whipser-small (# of parameters: 244M, sampling rate: 16khz)
 
-## Dataset Configuration
+## Dataset
 
-We used Mozilla foundation's common voice 11 hindi dataset.
+You are able to use [Mozilla foundation's common voice 11 hindi dataset](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0).
 
-About 6500 training dataset, About 2900 Test dataset
+|Training|Test|
+|:----:|:----:|
+|6.5K|2.9K|
 
-## Setting Experiments
+## Hyperparameter Configuration
 
-epoch:10, batch size: 16, lr: 1e-5
-
-After fine-tuning Whisper model, we calculated WER for each 1,000 step.
+|epoch|batch size|learning rate|
+|:---:|:---:|:---:|
+|10|16|1e-5|
 
 ## Result
 
-WER 33
+[WER](https://huggingface.co/learn/audio-course/chapter5/evaluation)(Word Error Rate) 33
 
 ## Limitation
 
